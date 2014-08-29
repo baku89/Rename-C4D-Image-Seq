@@ -77,8 +77,6 @@
 				</array>
 				<key>arguments</key>
 				<dict/>
-				<key>conversionLabel</key>
-				<integer>0</integer>
 			</dict>
 		</dict>
 		<dict>
@@ -139,7 +137,7 @@ fi
 
 COUNT=0
 
-for FILE in $( ls $1/* | grep '_i[0-9]_' ); do
+for FILE in $( find $1 -regex '.*_i[0-9]_.*' -print ); do
 	DEST=`echo $FILE | sed -e 's/_i[0-9]_/_/' `
 	mv ${FILE} ${DEST}
 	let COUNT+=1
@@ -261,12 +259,10 @@ fi</string>
 						<string>4</string>
 					</dict>
 				</dict>
-				<key>conversionLabel</key>
-				<integer>0</integer>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>374.500000:615.000000</string>
+				<string>374.500000:435.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/Japanese.lproj/main.nib</string>
 			</dict>
@@ -371,12 +367,10 @@ fi</string>
 						<string>0</string>
 					</dict>
 				</dict>
-				<key>conversionLabel</key>
-				<integer>0</integer>
 				<key>isViewVisible</key>
 				<false/>
 				<key>location</key>
-				<string>374.500000:432.000000</string>
+				<string>374.500000:252.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Set Value of Variable.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -511,12 +505,10 @@ fi</string>
 						<string>2</string>
 					</dict>
 				</dict>
-				<key>conversionLabel</key>
-				<integer>0</integer>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>374.500000:390.000000</string>
+				<string>374.500000:210.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Display Notification.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -526,21 +518,21 @@ fi</string>
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>6A497288-3F48-46A1-A1B8-339D712942CC</key>
+		<key>15AACC5D-7C72-42BA-99DC-FD023036C717</key>
 		<dict>
 			<key>from</key>
 			<string>82E1CC35-D079-4DF1-B728-989F1DABC23D - 82E1CC35-D079-4DF1-B728-989F1DABC23D</string>
 			<key>to</key>
 			<string>9FC9BBE1-9FAE-4E42-8A7E-51ABD41EF754 - 9FC9BBE1-9FAE-4E42-8A7E-51ABD41EF754</string>
 		</dict>
-		<key>6CE69304-A7B9-4CEE-8B8D-01F9711432C3</key>
+		<key>72D64B36-1D8F-4DD5-A05A-0CB69FB09B21</key>
 		<dict>
 			<key>from</key>
 			<string>6E029D3E-E98A-404F-830B-72049947F000 - 6E029D3E-E98A-404F-830B-72049947F000</string>
 			<key>to</key>
 			<string>D632F679-EA03-4084-8940-2F0B3696B06C - D632F679-EA03-4084-8940-2F0B3696B06C</string>
 		</dict>
-		<key>ADDB475B-182D-45BE-A9D5-A6C4773A5DC4</key>
+		<key>BC09A367-A697-421F-88F6-B2757AA2345F</key>
 		<dict>
 			<key>from</key>
 			<string>9FC9BBE1-9FAE-4E42-8A7E-51ABD41EF754 - 9FC9BBE1-9FAE-4E42-8A7E-51ABD41EF754</string>
