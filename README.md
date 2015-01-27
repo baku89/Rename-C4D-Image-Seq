@@ -1,6 +1,6 @@
 # Rename C4D Image Seq
 
-This is the automator script that get rid of the suffix like "_i1". It is automatically appended when rendering via Render Queue and overwriting an exverwriting an existing sequence with the same name.
+This is the automator script that gets rid of a suffix like "_i1". It is automatically appended when rendering via Render Queue and overwriting an exverwriting an existing sequence with the same name.
 
 ## Instructions
 
